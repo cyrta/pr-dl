@@ -1,33 +1,29 @@
-pr-dl
+polskieradio-dl
 =====
 
-Proste pobieranie podkastów z serwisu internetowego Polskiego Radia (polskieradio.pl).
+Proste pobieranie plik�w audio (podcast�w) z serwisu internetowego Polskiego Radia (polskieradio.pl).
 
-Jak użyć:
-====
+## Jak u?ywa?:
 
-python pr-dl-cli.pl [url] [-t]
+```
+    python polskieradio-dl  <url>
+```
 
-W miejsce parametru url wklejamy link do strony w serwisie Polskiego Radia, lub słowo lub frazę jaką chcemy wyszukać.
+W miejsce parametru url wklejamy link do strony w serwisie Polskiego Radia
 
-Opcjonalny parametr -t pozwala zaakceptować wszystkie pliki z góry.
 
-Przykład:
-====
+## Przykład:
 
-Aby pobrać wszystkie podkasty z pierwszej strony "Klubu Ludzi Ciekawych Wszystkiego" wpisujemy:
-python pr-dl-cli.py http://www.polskieradio.pl/8/Audycja/7298 -t
+## W przysz?o?ci dojdzie 
 
-"Klub Trójki" pobieramy tak:
-python pr-dl-cli.py http://www.polskieradio.pl/9/Audycja/7422 -t
+ - pobieranie podaj?c plik txt z linkami (jeden url na jedn? linie)
+ - mozliwo?? pobierania wszystkich plik�w z zadanej strony
+ - mozliwo?? pobierania wszystkich plik�w z danej audycji lub kategorii 
 
-Aby wyszukać słowo lub frazę skrypt odpalamy tak:
-python pr-dl-cli.py Wańkowicz -t
 
-lub:
-python pr-dl-cli.py Sergiusz\ Piasecki -t
+## Niedoskona?o?ci
 
-Niedoskonałości:
-====
+ Pobierany � zatem tylko podkast z jednej podstrony danego materia?u
 
-Niestety skrypt nie ogarnia "paginacji", która na stronach Polskiego Radia rozwiązana jest w taki ajaksowy, fikuśny sposób. Pobierane są zatem tylko podkasty z pierwszej strony.
+Niestety skrypt nie ogarnia "paginacji", kt�ra na stronach Polskiego Radia rozwi?zana jest w taki ajaksowy, 
+fiku?ny spos�b. Ze strony z wieloma linkami w tej chwili pobierany jest tylko pierwszy.
